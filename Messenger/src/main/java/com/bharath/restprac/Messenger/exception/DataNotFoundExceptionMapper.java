@@ -12,7 +12,7 @@ public class DataNotFoundExceptionMapper implements ExceptionMapper<DataNotFound
 
 	@Override
 	public Response toResponse(DataNotFoundException ex) {
-		ErrorMessage errorMessage=new ErrorMessage(ex.getMessage(), 404, "http://www.pornhub.org");
+		ErrorMessage errorMessage=new ErrorMessage(ex.getMessage(), 404, "http://www.govet.org");
 		return Response.status(Status.NOT_FOUND).entity(errorMessage).build();
 		 
 	}
